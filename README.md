@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
-##prerequisite
+## Prerequisite
+
 run npm install to node_modules
 
 ## Development server
