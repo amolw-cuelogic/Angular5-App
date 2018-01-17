@@ -85,6 +85,11 @@ D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bi
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Microsoft.Owin.Security.Twitter.xml
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\System.Web.Http.Owin.xml
-D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\obj\Debug\Northwnd.Srv.Web.Api.csprojResolveAssemblyReference.cache
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\obj\Debug\Northwnd.Srv.Web.Api.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\obj\Debug\Northwnd.Srv.Web.Api.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\log4net.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\log4net.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\log4net.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\obj\Debug\Northwnd.Srv.Web.Api.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Northwnd.Utility.Log.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Northwnd.Utility.Log.pdb

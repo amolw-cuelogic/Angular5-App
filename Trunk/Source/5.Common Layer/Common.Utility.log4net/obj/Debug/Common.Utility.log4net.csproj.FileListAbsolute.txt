@@ -1,4 +1,0 @@
-D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Common.Utility.log4net\bin\Debug\Common.Utility.log4net.dll
-D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Common.Utility.log4net\bin\Debug\Common.Utility.log4net.pdb
-D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Common.Utility.log4net\obj\Debug\Common.Utility.log4net.dll
-D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Common.Utility.log4net\obj\Debug\Common.Utility.log4net.pdb

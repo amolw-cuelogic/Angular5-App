@@ -1,5 +1,9 @@
 D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\Northwnd.Bl.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\Northwnd.Bl.pdb
-D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.csprojResolveAssemblyReference.cache
 D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\Northwnd.Bl.dll.config
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\EntityFramework.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\EntityFramework.SqlServer.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\EntityFramework.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\EntityFramework.SqlServer.xml

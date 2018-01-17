@@ -1,5 +1,9 @@
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\Northwnd.Dal.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\Northwnd.Dal.pdb
-D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Debug\Northwnd.Dal.csprojResolveAssemblyReference.cache
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Debug\Northwnd.Dal.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Debug\Northwnd.Dal.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\Northwnd.Dal.dll.config
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.SqlServer.xml

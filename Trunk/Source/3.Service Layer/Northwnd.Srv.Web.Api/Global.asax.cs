@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+//using log4net;
+using Northwnd.Utility.Log;
 
 namespace Northwnd.Srv.Web.Api
 {
@@ -18,6 +20,10 @@ namespace Northwnd.Srv.Web.Api
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+            AppLogManager.Configure();
+            AppLogManager.GetLogger().Info("App Start");
+
         }
     }
 }

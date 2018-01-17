@@ -1,0 +1,10 @@
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\Northwnd.Dal.dll.config
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\Northwnd.Dal.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\Northwnd.Dal.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\EntityFramework.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\EntityFramework.SqlServer.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\EntityFramework.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Release\EntityFramework.SqlServer.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Release\Northwnd.Dal.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Release\Northwnd.Dal.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Release\Northwnd.Dal.csprojResolveAssemblyReference.cache

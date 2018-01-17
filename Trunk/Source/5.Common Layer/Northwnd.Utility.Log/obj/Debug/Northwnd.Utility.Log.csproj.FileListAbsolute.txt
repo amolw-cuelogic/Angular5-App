@@ -1,0 +1,7 @@
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\bin\Debug\Northwnd.Utility.Log.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\bin\Debug\Northwnd.Utility.Log.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\bin\Debug\log4net.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\bin\Debug\log4net.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\bin\Debug\log4net.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\obj\Debug\Northwnd.Utility.Log.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\5.Common Layer\Northwnd.Utility.Log\obj\Debug\Northwnd.Utility.Log.pdb
