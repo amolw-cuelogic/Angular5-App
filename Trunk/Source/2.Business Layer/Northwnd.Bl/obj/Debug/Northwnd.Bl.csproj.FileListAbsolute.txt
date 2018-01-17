@@ -1,0 +1,5 @@
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\Northwnd.Bl.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\bin\Debug\Northwnd.Bl.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\2.Business Layer\Northwnd.Bl\obj\Debug\Northwnd.Bl.pdb
