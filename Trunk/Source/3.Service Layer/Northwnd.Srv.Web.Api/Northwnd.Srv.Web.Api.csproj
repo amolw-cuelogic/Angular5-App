@@ -239,6 +239,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SupplierController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -329,6 +330,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\1.Data Layer\Northwnd.Dal\Northwnd.Dal.csproj">
+      <Project>{d97d7613-449d-4262-9828-65d904a4c9b8}</Project>
+      <Name>Northwnd.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\2.Business Layer\Northwnd.Bl\Northwnd.Bl.csproj">
+      <Project>{88ee7302-3565-4635-b6b9-35745e53c928}</Project>
+      <Name>Northwnd.Bl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\5.Common Layer\Northwnd.Utility.Log\Northwnd.Utility.Log.csproj">
       <Project>{50f7a558-5307-43a3-8722-284799440222}</Project>
       <Name>Northwnd.Utility.Log</Name>

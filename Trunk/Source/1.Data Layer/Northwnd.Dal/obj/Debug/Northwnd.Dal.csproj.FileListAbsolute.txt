@@ -7,3 +7,4 @@ D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\Ent
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.SqlServer.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.xml
 D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\WorkSpace\Angular\my-app\Trunk\Source\1.Data Layer\Northwnd.Dal\obj\Debug\Northwnd.Dal.csprojResolveAssemblyReference.cache

@@ -110,3 +110,7 @@ D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Te
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\obj\Debug\Northwnd.Srv.Web.Api.Tests.pdb
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Utility.Log.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Utility.Log.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Dal.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Bl.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Dal.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api.Tests\bin\Debug\Northwnd.Bl.pdb

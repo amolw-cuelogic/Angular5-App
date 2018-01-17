@@ -38,6 +38,9 @@
       <HintPath>..\..\Solution\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Solution\packages\log4net-2.0.8\bin\net\4.5\release\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -55,6 +58,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.Data Layer\Northwnd.Dal\Northwnd.Dal.csproj">
+      <Project>{d97d7613-449d-4262-9828-65d904a4c9b8}</Project>
+      <Name>Northwnd.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\5.Common Layer\Northwnd.Utility.Log\Northwnd.Utility.Log.csproj">
+      <Project>{50f7a558-5307-43a3-8722-284799440222}</Project>
+      <Name>Northwnd.Utility.Log</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
