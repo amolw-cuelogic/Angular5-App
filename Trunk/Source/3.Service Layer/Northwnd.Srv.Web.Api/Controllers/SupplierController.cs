@@ -11,9 +11,17 @@ namespace Northwnd.Srv.Web.Api.Controllers
 {
     public class SupplierController : ApiController
     {
-        public IHttpActionResult GetSupplier()
+        [HttpGet]
+        public IHttpActionResult GetSupplierList()
         {
             var supplierList = SupplierBl.GetSupplierList();
+            return Ok(supplierList);
+        }
+
+        [HttpGet]
+        public IHttpActionResult GetSupplierDetails(int id)
+        {
+            var supplierList = SupplierBl.GetSupplierDetails(id);
             return Ok(supplierList);
         }
     }

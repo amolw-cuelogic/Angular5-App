@@ -40,10 +40,10 @@
             <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
             <mat-cell *matCellDef="let element">
 
-                <button mat-icon-button color="primary">
+                <button routerLink="/editSupplier/{{element.SupplierID}}" mat-icon-button color="primary">
                     <mat-icon aria-label="Example icon-button with a heart icon">edit</mat-icon>
                 </button>
-                <button mat-icon-button color="warn">
+                <button  mat-icon-button color="warn">
                     <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
                 </button>
             </mat-cell>

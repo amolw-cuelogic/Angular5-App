@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ListSupplier } from '../Component/List.Supplier';
+import { EditSupplier } from '../Component/Edit.Supplier';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module'
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { SupplierService } from '../Services/Supplier.Service';
 
@@ -16,14 +18,30 @@ import { SupplierService } from '../Services/Supplier.Service';
 @NgModule({
     declarations: [
         AppComponent,
-        ListSupplier
+        ListSupplier,
+        EditSupplier
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         MaterialModule,
         HttpModule,
-        FormsModule
+        FormsModule,
+        RouterModule.forRoot([
+            {
+                path: '',
+                component: ListSupplier
+            },
+            
+            {
+                path: 'editSupplier/:id',
+                component: EditSupplier
+            },
+            {
+                path: '**',
+                component: ListSupplier
+            }
+        ])
     ],
     providers: [SupplierService],
     bootstrap: [AppComponent]

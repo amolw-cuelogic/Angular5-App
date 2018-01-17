@@ -29,5 +29,24 @@ namespace Northwnd.Bl
                 return new List<Supplier>();
             }
         }
+
+        public static Supplier GetSupplierDetails(int id)
+        {
+            try
+            {
+                using (var dbCtx = new NORTHWNDEntities())
+                {
+                    dbCtx.Configuration.ProxyCreationEnabled = false;
+                    var SupplierList = dbCtx.Suppliers.Where(m => m.SupplierID == id).FirstOrDefault();
+                    SupplierList = SupplierList ?? new Supplier();
+                    return SupplierList;
+                }
+            }
+            catch (Exception ex)
+            {
+                applogmanager.Error(ex);
+                return new Supplier();
+            }
+        }
     }
 }
