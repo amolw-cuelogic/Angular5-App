@@ -1,12 +1,14 @@
 
+    <mat-toolbar-row>
+        <div>
+            <mat-form-field>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+            </mat-form-field>
+        </div>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="primary">Add Supplier</button>
+    </mat-toolbar-row>
 
-<div class="" style="width:100%">
-    <mat-form-field>
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-    </mat-form-field>
-
-
-</div>
 <div style="max-height:450px;overflow:auto;">
     <mat-table #table [dataSource]="dataSource">
 
@@ -37,7 +39,7 @@
         <ng-container matColumnDef="ActionButton">
             <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
             <mat-cell *matCellDef="let element">
-                
+
                 <button mat-icon-button color="primary">
                     <mat-icon aria-label="Example icon-button with a heart icon">edit</mat-icon>
                 </button>
