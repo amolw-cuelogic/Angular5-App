@@ -4,3 +4,13 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+
+/*Form Field (mat-form)*/
+
+mat-form-field {
+  width: 90%;
+}
+
+
+/*END - Form Field (mat-form)*/

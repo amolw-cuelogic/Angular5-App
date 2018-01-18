@@ -19,10 +19,17 @@ namespace Northwnd.Srv.Web.Api.Controllers
         }
 
         [HttpGet]
+        
         public IHttpActionResult GetSupplierDetails(int id)
         {
             var supplierList = SupplierBl.GetSupplierDetails(id);
             return Ok(supplierList);
         }
+
+        [HttpPost]
+        public void PostSaveSupplier([FromBody]Supplier da)
+        {
+        }
+
     }
 }

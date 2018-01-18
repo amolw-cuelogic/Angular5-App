@@ -9,7 +9,7 @@ import { EditSupplier } from '../Component/Edit.Supplier';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module'
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { SupplierService } from '../Services/Supplier.Service';
@@ -27,6 +27,7 @@ import { SupplierService } from '../Services/Supplier.Service';
         MaterialModule,
         HttpModule,
         FormsModule,
+        ReactiveFormsModule,
         RouterModule.forRoot([
             {
                 path: '',

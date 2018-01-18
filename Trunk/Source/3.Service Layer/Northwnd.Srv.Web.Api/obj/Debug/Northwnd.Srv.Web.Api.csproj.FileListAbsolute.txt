@@ -97,3 +97,6 @@ D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bi
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Northwnd.Dal.dll
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Northwnd.Dal.pdb
 D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\Northwnd.Bl.pdb
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\System.Web.Cors.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\System.Web.Http.Cors.dll
+D:\WorkSpace\Angular\my-app\Trunk\Source\3.Service Layer\Northwnd.Srv.Web.Api\bin\System.Web.Http.Cors.xml

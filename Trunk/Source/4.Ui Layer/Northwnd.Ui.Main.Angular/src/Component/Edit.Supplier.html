@@ -1,1 +1,78 @@
-﻿
+﻿<div style="width:50%">
+    <h2 style="font-family:Calibri" >Edit Details - Supplier Id : {{SupplierData.SupplierID}}</h2>
+    <form #form="ngForm" (ngSubmit)="SaveDetails(form.value)">
+        <div class="example-container">
+            <mat-grid-list cols="2" rowHeight="70" class="example-container">
+                <mat-grid-tile>
+                    <mat-form-field class="">
+                        <input name="CompanyName"  [(ngModel)]="SupplierData.CompanyName" 
+                               matInput placeholder="Company Name">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input  matInput placeholder="Contact Name"
+                               name="ContactName"  [(ngModel)]="SupplierData.ContactName" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Contact Title"
+                               name="ContactTitle"  [(ngModel)]="SupplierData.ContactTitle" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="City"
+                               name="City"  [(ngModel)]="SupplierData.City" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Address"
+                               name="Address"  [(ngModel)]="SupplierData.Address" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Country"
+                               name="Country"  [(ngModel)]="SupplierData.Country" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Fax"
+                               name="Fax"  [(ngModel)]="SupplierData.Fax" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Homepage"
+                               name="Homepage"  [(ngModel)]="SupplierData.Homepage" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Phone"
+                               name="Phone"  [(ngModel)]="SupplierData.Phone" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="PostalCode"
+                               name="PostalCode"  [(ngModel)]="SupplierData.PostalCode" >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput placeholder="Region"
+                               name="Region"  [(ngModel)]="SupplierData.Region" >
+                    </mat-form-field>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+            <button type="submit" style="float:right" mat-raised-button color="primary">Save</button>
+            <button style="float:right;margin-right:10px;" mat-raised-button color="primary" routerLink="/" mat-button>Back</button>
+        </div>
+    </form>
+</div>
