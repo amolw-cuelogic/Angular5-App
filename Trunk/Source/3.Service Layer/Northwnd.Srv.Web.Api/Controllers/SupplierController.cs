@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Filters;
+using System.Web.Http.Results;
 
 namespace Northwnd.Srv.Web.Api.Controllers
 {
@@ -19,7 +21,7 @@ namespace Northwnd.Srv.Web.Api.Controllers
         }
 
         [HttpGet]
-        
+
         public IHttpActionResult GetSupplierDetails(int id)
         {
             var supplierList = SupplierBl.GetSupplierDetails(id);
@@ -32,6 +34,30 @@ namespace Northwnd.Srv.Web.Api.Controllers
             SupplierBl.UpdateSupplierDetails(da);
             return Ok();
         }
+
+        protected override ExceptionResult InternalServerError(Exception exception)
+        {
+            return base.InternalServerError(exception);
+        }
+
+        protected override NotFoundResult NotFound()
+        {
+            return base.NotFound();
+        }
+
+        public HttpResponseMessage DeleteSupplier(int id)
+        {
+            var res = SupplierBl.DeleteSupplierDetails(id);
+            if (!string.IsNullOrEmpty(res))
+            {
+                HttpError err = new HttpError(res);
+                return Request.CreateResponse(HttpStatusCode.NotFound, err);
+            }
+            else
+                return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        
 
     }
 }

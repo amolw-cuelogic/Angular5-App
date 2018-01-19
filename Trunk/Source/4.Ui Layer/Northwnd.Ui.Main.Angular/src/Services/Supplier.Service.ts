@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class SupplierService {
 
     url: any = 'http://localhost:58582/api/supplier/';
-    constructor(private http: Http,private router : Router) {
+    constructor(private http: Http, private router: Router) {
 
     }
 
@@ -27,13 +27,20 @@ export class SupplierService {
 
     UpdateSupplier(formData: any) {
         var da = JSON.stringify(formData);
-        console.log(da);
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
         return this.http.post(this.url + 'PostSaveSupplier', da, options).toPromise()
-            .then(m =>
-            {
-                console.log(m);
+            .then(m => {
+                if (m.statusText == 'OK')
+                    this.router.navigate(['/']);
+            })
+            .catch(this.handleErrorPromise);
+    }
+
+    DeleteSupplier(SupplierId: any) {
+        debugger;
+        return this.http.delete(this.url + 'DeleteSupplier/' + SupplierId.toString()).toPromise()
+            .then(m => {
                 if (m.statusText == 'OK')
                     this.router.navigate(['/']);
             })
@@ -47,8 +54,8 @@ export class SupplierService {
     }
 
     private handleErrorPromise(error: Response | any) {
-        console.error(error.message || error);
-        return Promise.reject(error.message || error);
-    }	
+        console.log(error._body);
+        alert(error._body);
+    }
 
 }

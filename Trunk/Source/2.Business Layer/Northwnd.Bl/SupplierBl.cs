@@ -66,5 +66,18 @@ namespace Northwnd.Bl
             }
         }
 
+        public static string DeleteSupplierDetails(int SupplierId)
+        {
+           
+                using (var dbCtx = new NORTHWNDEntities())
+                {
+                    var obj = dbCtx.Suppliers.Where(m =>m.SupplierID == SupplierId).FirstOrDefault();
+                    dbCtx.Suppliers.Remove(obj);
+                    dbCtx.SaveChanges();
+                    return "";
+                }
+            
+        }
+
     }
 }

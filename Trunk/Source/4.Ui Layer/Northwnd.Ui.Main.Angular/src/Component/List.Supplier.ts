@@ -26,6 +26,10 @@ export class ListSupplier {
         filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
         this.dataSource.filter = filterValue;
     }
+
+    DeleteSupplier(SupplierId: any) {
+        this.supplierService.DeleteSupplier(SupplierId);
+    }
 }
 
 export interface Element {

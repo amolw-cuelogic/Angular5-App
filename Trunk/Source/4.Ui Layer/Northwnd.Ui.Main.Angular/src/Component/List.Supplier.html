@@ -6,7 +6,7 @@
             </mat-form-field>
         </div>
         <span class="example-spacer"></span>
-        <button mat-raised-button color="primary">Add Supplier</button>
+        <button routerLink="/editSupplier/0" mat-raised-button color="primary">Add Supplier</button>
     </mat-toolbar-row>
 
 <div style="max-height:450px;overflow:auto;">
@@ -44,7 +44,7 @@
                     <mat-icon aria-label="Example icon-button with a heart icon">edit</mat-icon>
                 </button>
                 <button  mat-icon-button color="warn">
-                    <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+                    <mat-icon (click)=DeleteSupplier(element.SupplierID) aria-label="Example icon-button with a heart icon">delete</mat-icon>
                 </button>
             </mat-cell>
         </ng-container>
