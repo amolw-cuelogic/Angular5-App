@@ -7,11 +7,13 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs';
 
+import { Router } from '@angular/router';
+
 @Injectable()
 export class SupplierService {
 
     url: any = 'http://localhost:58582/api/supplier/';
-    constructor(private http: Http) {
+    constructor(private http: Http,private router : Router) {
 
     }
 
@@ -26,13 +28,15 @@ export class SupplierService {
     UpdateSupplier(formData: any) {
         var da = JSON.stringify(formData);
         console.log(da);
-        //this.http.post(this.url + 'SaveSupplier', formData).map(result => result.json());
-
         let headers = new Headers({ 'Content-Type': 'application/json' });
-        headers.append('Access-Control-Allow-Origin','*');
         let options = new RequestOptions({ headers: headers });
         return this.http.post(this.url + 'PostSaveSupplier', da, options).toPromise()
-            .then()
+            .then(m =>
+            {
+                console.log(m);
+                if (m.statusText == 'OK')
+                    this.router.navigate(['/']);
+            })
             .catch(this.handleErrorPromise);
     }
 

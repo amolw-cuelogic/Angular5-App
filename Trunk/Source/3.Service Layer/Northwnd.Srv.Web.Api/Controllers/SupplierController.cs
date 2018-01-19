@@ -27,8 +27,10 @@ namespace Northwnd.Srv.Web.Api.Controllers
         }
 
         [HttpPost]
-        public void PostSaveSupplier([FromBody]Supplier da)
+        public IHttpActionResult PostSaveSupplier([FromBody]Supplier da)
         {
+            SupplierBl.UpdateSupplierDetails(da);
+            return Ok();
         }
 
     }

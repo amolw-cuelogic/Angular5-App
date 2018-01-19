@@ -24,5 +24,13 @@ namespace Northwnd.Srv.Web.Api
             AppLogManager.GetLogger().Info("App Start");
 
         }
+
+        protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+            {
+                HttpContext.Current.Response.Flush();
+            }
+        }
     }
 }

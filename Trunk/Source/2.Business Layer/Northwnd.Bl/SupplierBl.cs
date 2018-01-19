@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using log4net;
+using System.Data.Entity.Migrations;
 
 namespace Northwnd.Bl
 {
@@ -48,5 +49,22 @@ namespace Northwnd.Bl
                 return new Supplier();
             }
         }
+
+        public static void UpdateSupplierDetails(Supplier objSupplier)
+        {
+            try
+            {
+                using (var dbCtx = new NORTHWNDEntities())
+                {
+                    dbCtx.Suppliers.AddOrUpdate(objSupplier);
+                    dbCtx.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                applogmanager.Error(ex);
+            }
+        }
+
     }
 }
