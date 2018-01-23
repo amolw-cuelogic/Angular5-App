@@ -8,9 +8,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-    imports: [MatButtonModule, MatMenuModule, MatIconModule, MatToolbarModule, MatTableModule, MatFormFieldModule, MatInputModule, MatGridListModule],
-    exports: [MatButtonModule, MatMenuModule, MatIconModule, MatToolbarModule, MatTableModule, MatFormFieldModule, MatInputModule, MatGridListModule],
+    imports: [MatButtonModule, MatMenuModule, MatIconModule, MatToolbarModule,
+        MatTableModule, MatFormFieldModule, MatInputModule, MatGridListModule, MatCardModule],
+    exports: [MatButtonModule, MatMenuModule, MatIconModule, MatToolbarModule,
+        MatTableModule, MatFormFieldModule, MatInputModule, MatGridListModule, MatCardModule],
 })
 export class MaterialModule { }

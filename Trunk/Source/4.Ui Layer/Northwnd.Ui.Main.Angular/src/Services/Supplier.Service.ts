@@ -47,6 +47,23 @@ export class SupplierService {
             .catch(this.handleErrorPromise);
     }
 
+    login(formdata: any) {
+        debugger;
+        var da = JSON.stringify(formdata);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        //let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        //headers.append("withcredentials", "true");
+        //let options = new RequestOptions({ headers: headers });
+        this.http.post("http://localhost:58582/Token", da, options).toPromise()
+            .then(m => {
+                console.log(m);
+                if (m.statusText == 'OK')
+                    this.router.navigate(['/']);
+            })
+            .catch();
+    }
+
     private handleErrorObservable(error: Response | any) {
         console.error(error.message || error);
         return Observable.throw(error.message || error);

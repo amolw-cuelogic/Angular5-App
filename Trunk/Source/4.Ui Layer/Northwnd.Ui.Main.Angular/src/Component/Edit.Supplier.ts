@@ -2,7 +2,9 @@
 import { ActivatedRoute } from '@angular/router';
 import { SupplierService } from '../Services/Supplier.Service';
 import { FormsModule } from '@angular/forms';
-import 'rxjs/add/operator/map';
+
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'edit-supplier',
@@ -17,7 +19,7 @@ export class EditSupplier {
 
 
 
-    constructor(private route: ActivatedRoute, private supplierService: SupplierService) {
+    constructor(private route: ActivatedRoute, private router: Router, private httpClient: HttpClient) {
        
     }
 
@@ -48,11 +50,24 @@ export class EditSupplier {
     }
 
     GetSupplierDetails(id: number) {
-        this.supplierService.GetSupplierPerId(id).subscribe(m => { this.SupplierData = m; });
+        this.httpClient.get("http://localhost:58582/api/supplier/GetSupplierDetails/" + id.toString()).subscribe(
+            m => {
+                this.SupplierData = m;
+            }
+        );
+        
     }
 
     SaveDetails(formData: any) {
-        this.supplierService.UpdateSupplier(this.SupplierData);
+        var da = JSON.stringify(formData);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        this.httpClient.post("http://localhost:58582/api/supplier/PostSaveSupplier", da, { headers: headers }).subscribe(
+            m => {
+                this.router.navigate(['/']);
+            }
+        );
+
+        //this.supplierService.UpdateSupplier(this.SupplierData);
     }
 }
 

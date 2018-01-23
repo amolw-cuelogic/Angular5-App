@@ -1,6 +1,8 @@
 ﻿<div style="width:50%">
     <h2 style="font-family:Calibri" >Edit Details - Supplier Id : {{SupplierData.SupplierID}}</h2>
     <form #form="ngForm" (ngSubmit)="SaveDetails(form.value)">
+        <input name="SupplierID" [(ngModel)]="SupplierData.SupplierID"
+               type="hidden">
         <div class="example-container">
             <mat-grid-list cols="2" rowHeight="70" class="example-container">
                 <mat-grid-tile>

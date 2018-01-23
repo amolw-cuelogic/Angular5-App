@@ -11,6 +11,7 @@ using System.Web.Http.Results;
 
 namespace Northwnd.Srv.Web.Api.Controllers
 {
+    [Authorize]
     public class SupplierController : ApiController
     {
         [HttpGet]

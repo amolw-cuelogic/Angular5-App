@@ -1,0 +1,25 @@
+<mat-grid-list cols="3" style="padding-top:0px;">
+    <mat-grid-tile>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card style=" ">
+            <mat-card-title>
+                Login
+            </mat-card-title>
+                <form #form="ngForm" (ngSubmit)="Login(form.value)">
+                    <input name="grant_type"  placeholder="" type="hidden" [(ngModel)]="grant_type" value="password">
+                    <mat-form-field class="example-full-width">
+                        <input name="username" [(ngModel)]="username" matInput placeholder="User Name">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <input name="password" [(ngModel)]="password" matInput placeholder="Password" />
+                    </mat-form-field>
+
+                    <button type="submit" style="" mat-raised-button color="primary">Login</button>
+                </form>
+</mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+    </mat-grid-tile>
+</mat-grid-list>
