@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class ListSupplier {
     displayedColumns = ['SupplierID', 'CompanyName', 'ContactName', 'Country', 'ActionButton'];
     dataSource: any;
-    ELEMENT_DATA: Element[];
+    ELEMENT_DATA: any;
 
 
     constructor(private supplierService: SupplierService, private httpClient : HttpClient) {

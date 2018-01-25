@@ -1,10 +1,12 @@
-﻿using Northwnd.Bl;
+﻿using Microsoft.AspNet.Identity;
+using Northwnd.Bl;
 using Northwnd.Dal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Filters;
 using System.Web.Http.Results;
@@ -14,6 +16,15 @@ namespace Northwnd.Srv.Web.Api.Controllers
     [Authorize]
     public class SupplierController : ApiController
     {
+        [HttpPost]
+        public HttpResponseMessage Logout()
+        {
+            var authentication = HttpContext.Current.GetOwinContext().Authentication;
+            authentication.SignOut(DefaultAuthenticationTypes.ExternalBearer);
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
+
         [HttpGet]
         public IHttpActionResult GetSupplierList()
         {

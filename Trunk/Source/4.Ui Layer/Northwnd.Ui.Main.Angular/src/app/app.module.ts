@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { TokenHandler } from './token.handler';
+import { TokenHandler } from '../Services/token.handler';
 import { ListSupplier } from '../Component/List.Supplier';
 import { EditSupplier } from '../Component/Edit.Supplier';
 import { LoginComponent } from '../Component/Login.Component';

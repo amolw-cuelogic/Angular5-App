@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 export class EditSupplier {
     id: number;
     sub: any;
-    SupplierData: SupplierDetails;
+    SupplierData: any;
 
 
 

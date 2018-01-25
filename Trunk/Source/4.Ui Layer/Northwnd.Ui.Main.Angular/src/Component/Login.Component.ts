@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Http } from '@angular/http';
 
 import { SupplierService } from '../Services/Supplier.Service';
-
+import { TokenHandler } from '../Services/token.handler'
 
 import { Headers, RequestOptions } from '@angular/http';
 
@@ -17,21 +17,29 @@ import { Headers, RequestOptions } from '@angular/http';
 export class LoginComponent {
 
     grant_type: any = "password";
-    constructor(private router: Router, private httpClient: Http, private supp: SupplierService) {
-
+   
+    
+    constructor(private router: Router, private httpClient: Http, private supp: SupplierService, private token: TokenHandler) {
+      
     }
 
     Login(formData: any) {
         //debugger;
-        var da = formData;
-        da = ({ grant_type: "password", UserName: "amol", Password: "amol" });
+        //var da = formData;
+        var da = ({ grant_type: "password", username: "admin", password: "admin" });
         //da = JSON.stringify(formData);
         let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
         let options = new RequestOptions({ headers: headers });
-        this.httpClient.post("http://localhost:58582/Token", da, options).subscribe(
+        //let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        var data = "grant_type=password&username=" + formData.username + "&password=" + formData.password;
+        this.httpClient.post("http://localhost:58582/token", data, { headers: headers }).subscribe(
             m => {
-                console.log(m);
-                //this.router.navigate(['/']);
+            
+                var credentials = JSON.parse(m["_body"]);
+                console.log(credentials);
+                this.token.SetToken(credentials.access_token);
+                this.router.navigate(['/']);
+                
             }
         );
 

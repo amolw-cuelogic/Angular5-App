@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/observable/throw'
 import 'rxjs/add/operator/catch';
 import { Router } from '@angular/router';
-import { TokenHandler } from './token.handler'
+import { TokenHandler } from '../Services/token.handler'
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
@@ -15,13 +15,12 @@ export class AuthInterceptor implements HttpInterceptor {
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
         //Clone the request to add the new header.
-      
-        this.authReq = req.clone({ headers: req.headers.set("Authorization", "Bearer ") });
+
+        this.authReq = req.clone({ headers: req.headers.set("Authorization", "Bearer " + this.tokenhandler.GetToken()) });
 
         //send the newly created request
         return next.handle(this.authReq)
             .catch((error, caught) => {
-                debugger;
 
                 this.token = this.tokenhandler.GetToken();
                 if (this.token == null || this.token == undefined) {
@@ -31,7 +30,7 @@ export class AuthInterceptor implements HttpInterceptor {
                 }
 
                 //intercept the respons error and displace it to the console
-                console.log("Error Occurred");
+                
                 if (error.status == 401 || error.status == 0) {
                     this.router.navigate(['/login']);
                 }

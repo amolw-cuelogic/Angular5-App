@@ -51,7 +51,6 @@ namespace Northwnd.Srv.Web.Api.Providers
             new ClaimsIdentity(context.Options.AuthenticationType);
             ClaimsIdentity cookiesIdentity =
             new ClaimsIdentity(context.Options.AuthenticationType);
-
             AuthenticationProperties properties = CreateProperties(context.UserName);
             AuthenticationTicket ticket =
             new AuthenticationTicket(oAuthIdentity, properties);
